@@ -245,3 +245,10 @@ body {
         transform: translateY(0);
     }
 }
+
+/* mobile */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+}
