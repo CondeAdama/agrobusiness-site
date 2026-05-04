@@ -160,6 +160,16 @@ typeEffect();
 // changeLanguage(savedLang);
 
 
+function toggleChat() {
+    const chat = document.getElementById("chatbox");
+
+    if (chat.style.display === "flex") {
+        chat.style.display = "none";
+    } else {
+        chat.style.display = "flex";
+        chat.style.flexDirection = "column";
+    }
+}
 
 // ouvrir/fermer chat
 function toggleChat() {

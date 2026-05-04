@@ -255,19 +255,20 @@ body {
 
 
 
-/* chatbot */
+/* conteneur */
 .chatbot-container {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 15px;
+    right: 15px;
     z-index: 999;
 }
 
+/* bouton */
 .chatbot-icon {
     background: linear-gradient(45deg, #0a5c2e, #0f7a3d);
     color: white;
-    font-size: 22px;
-    padding: 15px;
+    font-size: 20px;
+    padding: 14px;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -275,23 +276,27 @@ body {
 
 /* chatbox */
 .chatbox {
-    width: 300px;
-    height: 400px;
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    width: 320px;
+    height: 420px;
     background: white;
     border-radius: 15px;
     display: none;
     flex-direction: column;
     overflow: hidden;
-    margin-bottom: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 /* header */
 .chat-header {
     background: #0a5c2e;
     color: white;
-    padding: 10px;
+    padding: 12px;
     display: flex;
     justify-content: space-between;
+    font-size: 14px;
 }
 
 /* body */
@@ -299,6 +304,7 @@ body {
     flex: 1;
     padding: 10px;
     overflow-y: auto;
+    font-size: 14px;
 }
 
 /* messages */
@@ -307,6 +313,7 @@ body {
     padding: 8px;
     border-radius: 10px;
     margin-bottom: 5px;
+    max-width: 80%;
 }
 
 .user-message {
@@ -315,22 +322,63 @@ body {
     border-radius: 10px;
     margin-bottom: 5px;
     text-align: right;
+    margin-left: auto;
+    max-width: 80%;
 }
 
 /* footer */
 .chat-footer {
     display: flex;
+    border-top: 1px solid #ddd;
 }
 
 .chat-footer input {
     flex: 1;
     border: none;
     padding: 10px;
+    font-size: 14px;
 }
 
 .chat-footer button {
     background: #0a5c2e;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 10px 15px;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+
+    .chatbox {
+        width: 90vw;
+        height: 70vh;
+        right: 5%;
+        bottom: 70px;
+        border-radius: 12px;
+    }
+
+    .chatbot-icon {
+        padding: 12px;
+        font-size: 18px;
+    }
+
+}
+
+/* 📱 PETITS TELEPHONES */
+@media (max-width: 480px) {
+
+    .chatbox {
+        width: 95vw;
+        height: 75vh;
+        right: 2.5%;
+    }
+
+    .chat-header {
+        font-size: 13px;
+    }
+
+    .chat-body {
+        font-size: 13px;
+    }
+
 }
