@@ -193,6 +193,35 @@
 
     </section>
 
+    <!-- assistant IA -->
+<div class="chatbot-container">
+
+    <div class="chatbot-icon" onclick="toggleChat()">
+        <i class="bi bi-chat-dots-fill"></i>
+    </div>
+
+    <div class="chatbox" id="chatbox">
+
+        <div class="chat-header">
+            Assistant AgroBusiness
+            <span onclick="toggleChat()">✖</span>
+        </div>
+
+        <div class="chat-body" id="chat-body">
+            <div class="bot-message">
+                Bonjour 👋 Comment puis-je vous aider ?
+            </div>
+        </div>
+
+        <div class="chat-footer">
+            <input type="text" id="user-input" placeholder="Votre question...">
+            <button onclick="sendMessage()">➤</button>
+        </div>
+
+    </div>
+
+</div>
+
 </main>
 
 <!-- footer -->
