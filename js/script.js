@@ -3,10 +3,10 @@
 // =======================
 
 const texts = [
-    "AgroBusiness Group SARL",
-    "Agriculture moderne",
-    "Solutions durables",
-    "Production intelligente"
+    "AgroBusiness Group SARL ",
+    "Agriculture moderne ",
+    "Solutions durables ",
+    "Production intelligente "
 ];
 
 let index = 0;
